@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+<title>Lab Space｜層次數位空間有限公司</title>
+
+<!-- meta -->
+<meta name="description"
+	content="層次數位空間|品牌視覺設計|UI/UX|客製化網站|客製化APP|系統平台開發|雲端空間租賃|數據分析|影音|直播|網頁托管主機|網頁托管|網頁托管服務,
+提供您一個全方位網路數位整合規劃平台思考空間。">
+<meta name="keywords"
+	content="品牌,視覺,響應式,想法,行銷,視覺識別系統,網站開發,網站,網頁設計,網頁托管主機,網站規劃,網頁托管,網頁托管服務,系統設計,影音平台,客製化,APP,數據分析,雲端空間租賃,全方位,網路,數位,整合,規劃,直播,公版,網頁製作,一頁式,微客製,web design,UI,UX,線上市集,藝術媒合,歐貘,整合行銷,歐貘整合行銷,電商平台">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport"
+	content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy"
+	content="upgrade-insecure-requests">
+
+<meta property="og:image"
+	content="https://labspace.com.tw/assets/upload/product/LabSpace_FB.png" />
+
+<!-- shortcut -->
+<link rel="shortcut icon" href="../assets/images/favicon.png"
+	type="image/x-icon">
+<link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="../assets/images/favicon.png"
+	type="image/x-icon">
+
+<!-- css -->
+<link rel="stylesheet" href="/assets/css/main.css?v=20201126">
+
+<!-- js -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=UA-123182296-2"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-123182296-2');
+</script>
+
+<!-- canvas init -->
+<script>
+	var canvas, stage, exportRoot;
+
+	function init() {
+		canvas = document.getElementById("canvas");
+		exportRoot = new lib.logo();
+
+		stage = new createjs.Stage(canvas);
+		stage.addChild(exportRoot);
+		stage.update();
+
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function(w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start' : new Date().getTime(),
+			event : 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l='
+				+ l
+				: '';
+		j.async = true;
+		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-W67BBBV');
+</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body onload="init();">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W67BBBV"
+			height="0" width="0" style="display: none; visibility: hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- 載入時logo動畫 -->
+	<div class="opening">
+		<div class="opening-bg"></div>
+		<div class="container">
+			<canvas id="canvas" class="opening-logo" width="550" height="400"></canvas>
+		</div>
+	</div>
+
+	<div id="pages-wrap" class="template">
+
+		<a href="" class="hamburger js-nav-toggle" data-active="off"> <span
+			class="burger"></span> <span class="burger"></span> <span
+			class="burger"></span> <span class="cross"></span> <span
+			class="cross"></span>
+		</a>
+
+		<div class="container">
+			<nav class="nav js-nav" data-active="off">
+				<div class="nav-header">
+					<a href="" class="js-header-logo"> <img
+						src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+					</a>
+				</div>
+				<div class="nav-wrap">
+					<div class="nav-list page-nav">
+						<button>Template Website</button>
+						<button>About</button>
+						<button>Design</button>
+						<button>Brand Design</button>
+						<button>Website Design</button>
+						<button>System Integration</button>
+						<button>APP Development</button>
+						<button>AI Analytics</button>
+						<button>Cloud space</button>
+					</div>
+					<div class="nav-list">
+						<!-- <button>Service</button> -->
+						<button class="contact-link">Contact</button>
+					</div>
+				</div>
+				<div class="nav-footer">
+					<div class="company-info">
+						台北市11070信義區基隆路一段155號12樓之6<br> T.+886 2 2528 0225 <br> ©
+						Copyright 2018 Lab Space | All Rights Reserved
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- brand cover -->
+		<div class="brand-cover owl-carousel">
+			<div class="cover-item">
+				<div class="cover-image cover-image-01-1"></div>
+				<div class="cover-image cover-image-01-2"></div>
+			</div>
+			<div class="cover-item">
+				<div class="cover-image cover-image-02-1"></div>
+				<div class="cover-image cover-image-02-2"></div>
+			</div>
+			<div class="cover-item">
+				<div class="cover-image cover-image-03-1"></div>
+				<div class="cover-image cover-image-03-2"></div>
+			</div>
+			<div class="cover-item">
+				<div class="cover-image cover-image-04-1"></div>
+				<div class="cover-image cover-image-04-2"></div>
+			</div>
+			<div class="cover-item">
+				<div class="cover-image cover-image-05-1"></div>
+				<div class="cover-image cover-image-05-2"></div>
+			</div>
+		</div>
+
+		<div class="page owl-carousel">
+
+			<!-- template -->
+			<section id="template" class="section template" data-timeout=11000>
+				<div class="cover cover-template"></div>
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">Template Website</h3>
+						<h1 class="heading">微客製風潮</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc">
+							<p>
+								還在煩惱網站要選擇<br class="d-md-none">客制化還是公版網站嗎？<br>
+								我們提供一個"新"的選擇，<br class="d-md-none">讓您不再煩惱。
+							</p>
+							<a href="https://web.labspace.com.tw/" target="_blank"
+								class="lets-go"> <img src="/assets/images/lets_go.svg"
+								alt="Lat’s Go!">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- about -->
+			<section id="about" class="section about" data-timeout=11000>
+				<div class="cover cover-about"></div>
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">About</h3>
+						<h1 class="heading">網路全方位設計師</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc">
+							<p>
+								我們是一間網路全方位規劃設計師<br> 我們協助各大行業，提供所有移動運用<br> 與網路項目解決方案服務。
+							</p>
+							<button class="btn contact-link">Contact</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- design -->
+			<section id="design" class="section design" data-timeout=11000>
+				<div class="cover cover-design"></div>
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">Design</h3>
+						<h1 class="heading">設計理念</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc">
+							<p>
+								服務項目：<br> 品牌視覺識別系統設計｜包裝設計｜<br data-rwd="mobile">網站規劃設計｜系統平台開發｜攝影企劃｜<br>
+								從一個想法開始，我們傾聽您對品牌的各種<br data-rwd="mobile">想法，透過多元的溝通方式，<br
+									data-rwd="tablet pc"> 深入瞭解<br data-rwd="mobile">產品與市場現狀，也為您提供解決之道，<br
+									data-rwd="mobile">完整扎實的步驟，<br data-rwd="tablet pc">
+								為您的品牌打造堅實基礎，<br data-rwd="mobile">因此提供多項延續性的服務，<br
+									data-rwd="mobile">來達成脫穎而出的成效。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- brand -->
+			<section id="brand" class="section brand" data-timeout=17000>
+				<!-- <div class="cover cover-brand"></div> -->
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">Brand Design</h3>
+						<h1 class="heading">品牌視覺設計</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- web -->
+			<section id="web" class="section web" data-timeout=11000>
+				<div class="cover cover-web"></div>
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">Website Design</h3>
+						<h1 class="heading">網站規劃設計</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc">
+							<p>
+								專屬客製化響應式網站設計：<br> 包含企業形象網站、電商務網站、<br data-rwd="mobile">平台架設、活動網站…等製作。<br>
+								就算是不同的產業，您說的話我也能聽懂，<br data-rwd="mobile">嚴謹專案有效開發流程控管、<br>
+								高質感的設計、流暢的使用者體驗、<br data-rwd="mobile">為您量身打造規劃設計。
+							</p>
+							<a href="https://web.labspace.com.tw/" target="_blank"
+								class="btn btn-white">Contact</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- system -->
+			<section id="system" class="section system" data-timeout=11000>
+				<div class="cover cover-system"></div>
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">System Integration</h3>
+						<h1 class="heading">系統平台開發</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc">
+							<p>
+								SI 系統整合 System Integration <br data-rwd="mobile">我們提供友善完備的網站維運解決方案，<br>
+								跨平台WEB雲端系統開發／<br data-rwd="mobile">雲端應用系統整合／軟硬體系統整合／<br>
+								整合創意、策略、技術，協助企業<br data-rwd="mobile">有效執行網站內容管理，<br
+									data-rwd="mobile">開發設計兼顧成本與成效。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- app -->
+			<section id="app" class="section app" data-timeout=11000>
+				<div class="cover cover-app"></div>
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">APP Development</h3>
+						<h1 class="heading">UX | UI</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc">
+							<p>
+								移動應用開發以貼近使用思維規劃，<br data-rwd="mobile">跨平台整合移動應用程序。<br>
+								提供任何類別的高質量標準移動應用程序，<br data-rwd="mobile">我們與不同的品牌，組織，初創企業<br
+									data-rwd="mobile">和個人合作，<br data-rwd="tablet pc">
+								創建強大的應用程序，<br data-rwd="mobile">規劃戰略和行業最佳產品，以在市場中競爭。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ai -->
+			<section id="ai" class="section ai" data-timeout=11000>
+				<div class="cover">
+					<video playsinline loop muted autoplay poster="">
+						<source src="/assets/vod/iStock-468620302.mp4" type="video/mp4" />
+					</video>
+				</div>
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">AI Analytics</h3>
+						<h1 class="heading">大數據分析</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc">
+							<p>
+								AI 智慧服務學習／分析引擎／<br data-rwd="mobile">商用模組解決方案／系統整合與部署／<br>
+								AutoML引擎包含全自動機器學習，高準確度<br data-rwd="mobile">機器學習模型，提供各式商業情境應用模組，<br>
+								提供完整API，輕鬆導入既有系統整合與部署<br data-rwd="mobile">並得到符合情境的商業價值。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- cloud -->
+			<section id="cloud" class="section cloud" data-timeout=11000>
+				<div class="cover cover-cloud"></div>
+				<div class="container">
+					<div class="header">
+						<a href="" class="js-header-logo"> <img
+							src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+						</a>
+					</div>
+					<div class="display">
+						<h3 class="sub-heading">Cloud space</h3>
+						<h1 class="heading">網路雲端空間租賃</h1>
+						<div class="progress"></div>
+					</div>
+					<div class="content">
+						<div class="desc">
+							<p>
+								網頁空間租賃／雲端主機租賃／<br data-rwd="mobile">影音平台租賃／雲端空間運用／<br>
+								提供最專業的服務態度，仔細聆聽您的需求諮詢，專業客製化量身打造，<br> 完整規劃最適合的專屬雲端主機方案。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- /.page -->
+	</div>
+	<!-- /.pages-wrap -->
+
+	<!-- 聯絡我們 -->
+	<div class="modal-wrap modal-contact" data-active="off">
+		<div class="container">
+			<div class="header">
+				<img src="/assets/images/logo.svg" alt="Lab Space" class="logo">
+				<a class="modal-close" href="#"></a>
+			</div>
+			<!-- /.header -->
+			<div class="display">
+				<!-- <h1 class="sub-heading">Contact</h1> -->
+				<div id="map"></div>
+			</div>
+			<!-- /.display -->
+			<div class="content" style="width: 100%;">
+				<form id="Form">
+					<div class="form-column">
+						<div class="form-group-row">
+							<label for="username">姓名</label> <input type="text"
+								name="username" id="username">
+						</div>
+						<div class="form-group-row">
+							<label for="subject">主旨</label> <input type="text" name="subject"
+								id="subject" maxlength="100">
+						</div>
+						<div class="form-group-row">
+							<label for="telephone">電話</label> <input type="text"
+								name="telephone" id="telephone" maxlength="20">
+						</div>
+						<div class="form-group-row">
+							<label for="mail">Email</label> <input type="email" name="mail"
+								id="mail">
+						</div>
+					</div>
+					<div class="form-column">
+						<div class="form-group">
+							<label for="message">需求訊息</label>
+							<textarea name="message" cols="30" rows="3"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="captcha">驗證碼</label>
+							<div class="captcha-group">
+								<div class="column">
+									<input type="text" name="captchatext" class="captcha-input"
+										id="captcha">
+									<!--
+                <img class="captcha-img" id="cap-img" src="/assets/images/captcha/1715320772.3648.jpg" alt="">                
+									!-->
+									<button type="button" class="btn-captcha" id="refresh_captcha"></button>
+								</div>
+								<div class="column-btn">
+									<button id="do_send" class="btn btn-submit">送出</button>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="help-block" id="relay_msg"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- /content -->
+			<div class="company-info">
+				台北市11070信義區基隆路一段155號12樓之6<span class="line">|</span><br> T.+886
+				2 2528 0225 <span class="line">|</span><br> © Copyright 2018
+				Lab Space | All Rights Reserved
+			</div>
+			<!-- /.company-info -->
+		</div>
+	</div>
+
+	<!-- Google Map Api-->
+	<script>
+		function initMap() {
+			var labspace = {
+				lat : 25.0421864,
+				lng : 121.5654128
+			};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom : 13,
+				center : labspace,
+				styles : [ {
+					"featureType" : "all",
+					"elementType" : "geometry.fill",
+					"stylers" : [ {
+						"weight" : "2.00"
+					} ]
+				}, {
+					"featureType" : "all",
+					"elementType" : "geometry.stroke",
+					"stylers" : [ {
+						"color" : "#9c9c9c"
+					} ]
+				}, {
+					"featureType" : "all",
+					"elementType" : "labels.text",
+					"stylers" : [ {
+						"visibility" : "on"
+					} ]
+				}, {
+					"featureType" : "landscape",
+					"elementType" : "all",
+					"stylers" : [ {
+						"color" : "#f2f2f2"
+					} ]
+				}, {
+					"featureType" : "landscape",
+					"elementType" : "geometry.fill",
+					"stylers" : [ {
+						"color" : "#ffffff"
+					} ]
+				}, {
+					"featureType" : "landscape.man_made",
+					"elementType" : "geometry.fill",
+					"stylers" : [ {
+						"color" : "#ffffff"
+					} ]
+				}, {
+					"featureType" : "poi",
+					"elementType" : "all",
+					"stylers" : [ {
+						"visibility" : "off"
+					} ]
+				}, {
+					"featureType" : "road",
+					"elementType" : "all",
+					"stylers" : [ {
+						"saturation" : -100
+					}, {
+						"lightness" : 45
+					} ]
+				}, {
+					"featureType" : "road",
+					"elementType" : "geometry.fill",
+					"stylers" : [ {
+						"color" : "#eeeeee"
+					} ]
+				}, {
+					"featureType" : "road",
+					"elementType" : "labels.text.fill",
+					"stylers" : [ {
+						"color" : "#7b7b7b"
+					} ]
+				}, {
+					"featureType" : "road",
+					"elementType" : "labels.text.stroke",
+					"stylers" : [ {
+						"color" : "#ffffff"
+					} ]
+				}, {
+					"featureType" : "road.highway",
+					"elementType" : "all",
+					"stylers" : [ {
+						"visibility" : "simplified"
+					} ]
+				}, {
+					"featureType" : "road.arterial",
+					"elementType" : "labels.icon",
+					"stylers" : [ {
+						"visibility" : "off"
+					} ]
+				}, {
+					"featureType" : "transit",
+					"elementType" : "all",
+					"stylers" : [ {
+						"visibility" : "off"
+					} ]
+				}, {
+					"featureType" : "water",
+					"elementType" : "all",
+					"stylers" : [ {
+						"color" : "#46bcec"
+					}, {
+						"visibility" : "on"
+					} ]
+				}, {
+					"featureType" : "water",
+					"elementType" : "geometry.fill",
+					"stylers" : [ {
+						"color" : "#ffc20b"
+					} ]
+				}, {
+					"featureType" : "water",
+					"elementType" : "labels.text.fill",
+					"stylers" : [ {
+						"color" : "#070707"
+					} ]
+				}, {
+					"featureType" : "water",
+					"elementType" : "labels.text.stroke",
+					"stylers" : [ {
+						"color" : "#ffffff"
+					} ]
+				} ]
+			});
+
+			var icon = {
+				path : "M11 2c-3.9 0-7 3.1-7 7 0 5.3 7 13 7 13 0 0 7-7.7 7-13 0-3.9-3.1-7-7-7Zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5 0-1.4 1.1-2.5 2.5-2.5 1.4 0 2.5 1.1 2.5 2.5 0 1.4-1.1 2.5-2.5 2.5Z",
+				fillColor : '#000000',
+				fillOpacity : 1,
+				anchor : new google.maps.Point(11.5, 22.5),
+				strokeWeight : 0,
+				scale : 1.7
+			}
+
+			var marker = new google.maps.Marker({
+				position : labspace,
+				map : map,
+				icon : icon
+			});
+		}
+	</script>
+
+	<!-- 寄信表單 -->
+	<script asyn src="../assets/plugins/HoldOn/HoldOn.min.js"></script>
+	<script src="../assets/plugins/validate/jquery.validate.min.js"></script>
+	<script>
+		$(document).ready(
+				function() {
+					//送出
+					$("#Form").validate({
+						rules : {
+							username : {
+								required : true
+							},
+							mail : {
+								required : true,
+								email : true
+							},
+							telephone : {
+								required : true
+							},
+							subject : {
+								required : true
+							},
+							message : {
+								required : true
+							},
+							captchatext : {
+								required : true
+							},
+						},
+						messages : {
+							username : "請填寫姓名",
+							telephone : "請填寫電話",
+							message : "請填寫需求訊息",
+							subject : "請填寫主旨",
+							captchatext : "請填寫驗證碼",
+							mail : "請填寫信箱",
+						},
+						errorElement : "em",
+						errorPlacement : function(error, element) {
+							error.addClass("help-block");
+							error.insertAfter(element);
+						},
+						submitHandler : function(form) {
+							$.ajax({
+								method : "POST",
+								url : "/sendmail",
+								data : $('form').serialize(),
+								success : function(msg) {
+									HoldOn.close();
+									showMsg(msg);
+								},
+								beforeSend : function() {
+									//顯示搜尋動畫
+									HoldOn.open({
+										theme : 'sk-cube-grid',
+										message : "<h4>Loading</h4>"
+									});
+								},
+								error : function(xhr) {
+									HoldOn.close();
+									console.log(xhr)
+								}
+							});
+						}
+					});
+
+					function showMsg(msg) {
+						if (msg == "ok") {
+							//成功寄出
+							alert('成功寄出');
+							$('#Form').find('input, textarea').val('');
+							// 關閉
+							$('.modal-contact').attr('data-active', 'off');
+						} else if (msg != "") {
+							$('#relay_msg').text(msg);
+						}
+					}
+
+					$("#refresh_captcha").click(
+							function() {
+								$.ajax({
+									method : "POST",
+									url : "/refresh_captcha",
+									data : $('form').serialize(),
+									success : function(cap) {
+										console.log(cap)
+										$('#cap-img').attr(
+												'src',
+												"/assets/images/captcha/"
+														+ cap['filename']);
+									},
+									error : function(xhr) {
+										console.log(xhr)
+									}
+								});
+							});
+
+				});
+	</script>
+	<!-- createjs -->
+	<script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
+	<script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+	<script src="http://code.createjs.com/movieclip-0.8.1.min.js"></script>
+	<!-- labspace common js (google map api) -->
+	<script src="//static.labspace.com.tw/js/labspace.js"></script>
+	<!-- main js -->
+	<script src="/assets/js/vendor-dist.js"></script>
+	<script src="/assets/js/main-dist.js?v=20201123"></script>
+</body>
+
+</html>
